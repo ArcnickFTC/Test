@@ -1,0 +1,23 @@
+BUILD M&M CLIENT WITHOUT INSTALLING JAVA ON YOUR COMPUTER
+
+This project includes a GitHub Actions workflow that builds the mod on GitHub's
+servers using Java 21. You do not need Java, Gradle, or administrator access
+on your own computer.
+
+1. Sign in to GitHub in your browser and create a new repository.
+2. Upload the CONTENTS of this project folder to the repository (not the outer
+   folder itself). Make sure .github/workflows/build.yml is included. If GitHub's
+   web uploader hides dot-folders, create .github/workflows/build.yml on GitHub
+   using the contents of that file in this ZIP.
+3. Open the repository's Actions tab.
+4. Select "Build M&M Client" and click "Run workflow" (or push/commit to main).
+5. Wait for the workflow to finish successfully.
+6. Open the completed workflow run and download the artifact named
+   "mm-client-minecraft-1.21.11" from the Artifacts section.
+7. Extract the downloaded artifact ZIP. Put the .jar inside your Minecraft
+   1.21.11 Fabric mods folder.
+
+IMPORTANT:
+- This builds the source project; it is not a ZIP-to-JAR file conversion.
+- Use Fabric Loader and Fabric API compatible with Minecraft 1.21.11.
+- The workflow will report any source/dependency compilation errors in its log.

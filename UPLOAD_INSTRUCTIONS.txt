@@ -1,0 +1,24 @@
+M&M CLIENT - GITHUB CLOUD BUILD
+
+This ZIP is arranged with the project files at the repository root.
+
+1. Extract this ZIP on your computer.
+2. In your GitHub repository, click Code.
+3. Click Add file > Upload files.
+4. Open the extracted mm_github_fixed folder and select ALL its contents,
+   including the hidden .github folder. Drag them into GitHub's upload area.
+   If Windows hides .github, use the manual workflow creation steps below.
+5. Commit the upload to the main branch.
+6. Open Actions. Choose Build M&M Client and click Run workflow.
+7. When the run completes, open it and download the artifact
+   mm-client-minecraft-1.21.11. The JAR is inside that downloaded artifact ZIP.
+
+IF GITHUB WEB UPLOAD DOES NOT INCLUDE .github:
+1. In the repository click Add file > Create new file.
+2. For the filename enter exactly: .github/workflows/build.yml
+3. Paste the contents of the existing build.yml from this ZIP's
+   .github/workflows/build.yml file.
+4. Commit the new file. Then open Actions.
+
+No Java installation or admin rights are needed on your PC. GitHub Actions
+installs Java 21 on its own build runner.
